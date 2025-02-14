@@ -5,20 +5,20 @@
 class Papercut < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/papercut"
-  version "0.4.6"
+  version "0.4.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.6/papercut_Darwin_x86_64.tar.gz"
-      sha256 "f636558a38e48a81401552dc609e3794e383be9131b3d50aa46ba521893a044e"
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.7/papercut_Darwin_x86_64.tar.gz"
+      sha256 "917dbc90761644f3429761ddc41204e164f7f6d381e5f45c2251a15c4b86f2e7"
 
       def install
         bin.install "papercut"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.6/papercut_Darwin_arm64.tar.gz"
-      sha256 "841fc161c9d394b619bb8ef6ba10e4eba1335ecdf01e7ae864460044ab8f0f2e"
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.7/papercut_Darwin_arm64.tar.gz"
+      sha256 "bdb5edd8911420ca10bebf39d561bdc9798b9f6bb737470ff86af42fa133679e"
 
       def install
         bin.install "papercut"
@@ -29,8 +29,8 @@ class Papercut < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.6/papercut_Linux_x86_64.tar.gz"
-        sha256 "54f337458303ecd435fb7ecbcd5ff6a224febc28e1ecec1df11b87e3140ccd29"
+        url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.7/papercut_Linux_x86_64.tar.gz"
+        sha256 "9d2629bf9e5b2dd830bcbab39033648a11ce7d53833f1d93c7ad18309b798cc0"
 
         def install
           bin.install "papercut"
@@ -39,8 +39,8 @@ class Papercut < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.6/papercut_Linux_arm64.tar.gz"
-        sha256 "3f6348f0b640bd4345ebb9f8dc5bcf24de0d7306b6bb3e2f59ff65810295b467"
+        url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.7/papercut_Linux_arm64.tar.gz"
+        sha256 "9d187c317d78c868005c28cc04caae0c85296d3b470f3628b3976c7576a8b777"
 
         def install
           bin.install "papercut"
