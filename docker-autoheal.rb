@@ -5,20 +5,20 @@
 class DockerAutoheal < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/docker-autoheal"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.0/docker-autoheal_Darwin_x86_64.tar.gz"
-      sha256 "d41a0dd7d63266882cbdcd97f9825d02dc881c7a83cefffa3c8ada3d5751facb"
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.1/docker-autoheal_Darwin_x86_64.tar.gz"
+      sha256 "7ea51935dd0b9b2dd4e0e90f170622fe9f02850410b45ee623004ad7df87d6bb"
 
       def install
         bin.install "docker-autoheal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.0/docker-autoheal_Darwin_arm64.tar.gz"
-      sha256 "e6e7d380a1a79055e946c44c375756c90e69be871fb739d797b12b0235b4d169"
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.1/docker-autoheal_Darwin_arm64.tar.gz"
+      sha256 "31321a7b3462527d81c37538e6815111728e4c97ccf763a1e99ab7940dce7f67"
 
       def install
         bin.install "docker-autoheal"
@@ -29,8 +29,8 @@ class DockerAutoheal < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.0/docker-autoheal_Linux_x86_64.tar.gz"
-        sha256 "eefa1c3a09d16897e302a208d0ebcf39e84d4330f11c8b25e44e5f58a7279c1f"
+        url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.1/docker-autoheal_Linux_x86_64.tar.gz"
+        sha256 "8460c397fa80e425dbbecbb3b350b38049840d994dbfef0e885fbedaa51561b5"
 
         def install
           bin.install "docker-autoheal"
@@ -39,8 +39,8 @@ class DockerAutoheal < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.0/docker-autoheal_Linux_arm64.tar.gz"
-        sha256 "6928d586a0628bda31e9183572e63fc372b872da0adc3b71945d37e052412277"
+        url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.1/docker-autoheal_Linux_arm64.tar.gz"
+        sha256 "a46726ef18ea6d5c8ec91a2aaeb4db33f1a1a6c057750ed8f3416b3a40c91390"
 
         def install
           bin.install "docker-autoheal"
