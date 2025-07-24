@@ -5,20 +5,20 @@
 class Htr < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/htr"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.1/htr_Darwin_x86_64.tar.gz"
-      sha256 "4a5e30152f0d1e21dfd4e2e328892ce043bc17e148cbbc547eb84eccd5067cce"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.2/htr_Darwin_x86_64.tar.gz"
+      sha256 "458e2de9e6050974bcfd4dcbe7f042fc6054e00a51c7b192beaa46aeb4ac50f5"
 
       def install
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.1/htr_Darwin_arm64.tar.gz"
-      sha256 "3ed63008454341aa071f109ed6a40be21f972c12f2afa14c52010c9e4267a159"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.2/htr_Darwin_arm64.tar.gz"
+      sha256 "a3436d218a65bd53c047875ce3f5bd3d8f62b95218320c90c1d2cb1a87392d0b"
 
       def install
         bin.install "htr"
@@ -28,15 +28,15 @@ class Htr < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.1/htr_Linux_x86_64.tar.gz"
-      sha256 "40892919d984e6863babcc93ac159e7595d942248caec557a0ba0b4c8a0fa765"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.2/htr_Linux_x86_64.tar.gz"
+      sha256 "cb943dbd3b5e04ff3ef9b6b378eb411b5c91fcf8929606c25ebc51e8f8ff2e1d"
       def install
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.1/htr_Linux_arm64.tar.gz"
-      sha256 "2c36edcb6033547d9b899fba01bd4e42643bad7f048f2621da8d67eac2fb0bf8"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.1.2/htr_Linux_arm64.tar.gz"
+      sha256 "3fbe176a81cbbae69b8b2af58c6c89e8aeac00ac87d212b437d4907c0c96660e"
       def install
         bin.install "htr"
       end
