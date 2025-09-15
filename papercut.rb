@@ -5,20 +5,20 @@
 class Papercut < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/papercut"
-  version "0.4.12"
+  version "0.4.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.12/papercut_Darwin_x86_64.tar.gz"
-      sha256 "7f82aaa5058d3b7f53cf7e15405238c623bb5599ab6512029018d6f19f22e699"
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.13/papercut_Darwin_x86_64.tar.gz"
+      sha256 "3966131b38e4dc5c05db2fb246a75b734884ca904227664b6bce895557a27d1a"
 
       def install
         bin.install "papercut"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.12/papercut_Darwin_arm64.tar.gz"
-      sha256 "25db8b84bf4881ecce5f2c4d8ac7a59e73951136b82e6d05c7756822535cbfae"
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.13/papercut_Darwin_arm64.tar.gz"
+      sha256 "7493881bc32affa2c91b033834adde65aefc1516bb5756290efb89adc228c1eb"
 
       def install
         bin.install "papercut"
@@ -27,16 +27,16 @@ class Papercut < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.12/papercut_Linux_x86_64.tar.gz"
-      sha256 "2c36a5faefe24bfa627045909e366ea383143c493b8a20c6e37d7dc3aa7db353"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.13/papercut_Linux_x86_64.tar.gz"
+      sha256 "de231790ae0350b3b90e555bed93f59533e68c78bb0ff5334dcdb5c4cbca0937"
       def install
         bin.install "papercut"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.12/papercut_Linux_arm64.tar.gz"
-      sha256 "56c69de230bf0180cab2f4e1529ed0cf2b477930d8584c7352c955118c7009e5"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lehigh-university-libraries/papercut/releases/download/0.4.13/papercut_Linux_arm64.tar.gz"
+      sha256 "62b3fe10a40a7ee0db8d647535747eaf778649d74acb6ac13744ee431da7c773"
       def install
         bin.install "papercut"
       end
