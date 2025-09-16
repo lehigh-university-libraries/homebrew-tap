@@ -5,20 +5,20 @@
 class Htr < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/htr"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.2.0/htr_Darwin_x86_64.tar.gz"
-      sha256 "ea02225835df486a12dd7729b93df379f35d86cb360ad027e949ccc2787f57a0"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.3.0/htr_Darwin_x86_64.tar.gz"
+      sha256 "d51af422cf4a6caa55ee9d8ca35f8c9255388af302600749c8cde39750c37cbc"
 
       def install
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.2.0/htr_Darwin_arm64.tar.gz"
-      sha256 "1ee91eec144466c52f032b320610079172754feb52cadebc95dc16a8d14c588b"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.3.0/htr_Darwin_arm64.tar.gz"
+      sha256 "066f5837bca490818e5a8a4aa6af8057754e91f83aff408a89d3f8c38b93b248"
 
       def install
         bin.install "htr"
@@ -27,16 +27,16 @@ class Htr < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.2.0/htr_Linux_x86_64.tar.gz"
-      sha256 "2d1ce9432686eab7f7e5aa7f9a70a650596410b89af73dbe8fb5710a1af91f82"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.3.0/htr_Linux_x86_64.tar.gz"
+      sha256 "83ea4f1ba8acf73e003c01d752e9dc5e0793faf4c741a7ab58282c608a486a2f"
       def install
         bin.install "htr"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.2.0/htr_Linux_arm64.tar.gz"
-      sha256 "86ffb65dffa05c0c2d79e841d890bc9281dde6f19cc96a15eb02bd402b40b866"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/0.3.0/htr_Linux_arm64.tar.gz"
+      sha256 "f2f18f4651313f128b9dce2c15f8f9eefa96667328baa8761b234be1f2a485d3"
       def install
         bin.install "htr"
       end
