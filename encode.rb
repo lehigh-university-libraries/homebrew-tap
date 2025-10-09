@@ -5,20 +5,20 @@
 class Encode < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/encode"
-  version "0.0.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.0.3/encode_Darwin_x86_64.tar.gz"
-      sha256 "1556d030732aeddfb07ce4c2ba05b0f03ead5311cce22fa30bdc2fc0dd086b7b"
+      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.3.0/encode_Darwin_x86_64.tar.gz"
+      sha256 "afa44b1e18091b4e45eeed500923dbddd0af93d9c04e8bb0cd86c16f7bbf410c"
 
       def install
         bin.install "encode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.0.3/encode_Darwin_arm64.tar.gz"
-      sha256 "4722f77964a4a4479975c18d852f32dcf1fd4f59b3a6f0b73770a492c601b22d"
+      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.3.0/encode_Darwin_arm64.tar.gz"
+      sha256 "e08ec762dab2c235a4131387dae34b7d82f98db077206f50c9ef62a3304b24ec"
 
       def install
         bin.install "encode"
@@ -28,15 +28,15 @@ class Encode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.0.3/encode_Linux_x86_64.tar.gz"
-      sha256 "a88964240ea4a46218bad483ffb6171dfedbf94d7222fc0bdf31ee717fa87ab6"
+      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.3.0/encode_Linux_x86_64.tar.gz"
+      sha256 "afd46b3a08de04f4fa91717431a305cdf1170d37b6acdd146209e1095a98771d"
       def install
         bin.install "encode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.0.3/encode_Linux_arm64.tar.gz"
-      sha256 "3b2d09667545d940aecb50bb5000bba5fbb0447ef593a70240c4afac704ae25d"
+      url "https://github.com/lehigh-university-libraries/encode/releases/download/0.3.0/encode_Linux_arm64.tar.gz"
+      sha256 "2e52f729f1637845fa68f20b30a4c63656bee5664a41e092c690c61481c33bd1"
       def install
         bin.install "encode"
       end
