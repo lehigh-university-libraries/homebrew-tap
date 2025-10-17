@@ -5,20 +5,20 @@
 class Htr < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/htr"
-  version "0.9.1"
+  version "0.10.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.9.1/htr_Darwin_x86_64.tar.gz"
-      sha256 "5daccbf8aeba1679e8c154d4f88a3c13b331e5da80aaafa96c48beae8bb8daca"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.10.0/htr_Darwin_x86_64.tar.gz"
+      sha256 "a4b810ded515bcc300696faaf4aff159c52c203db1eefda2c120b2208441c590"
 
       def install
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.9.1/htr_Darwin_arm64.tar.gz"
-      sha256 "36518f12f3c2627b331d855550010c9e3d0c0f8fa81c05e3b241662ad9f295b2"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.10.0/htr_Darwin_arm64.tar.gz"
+      sha256 "d28e28137b2bbe40d2f81c05f5ab6e27b107850bf80f5ccca5f08127f665e5b0"
 
       def install
         bin.install "htr"
@@ -28,15 +28,15 @@ class Htr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.9.1/htr_Linux_x86_64.tar.gz"
-      sha256 "bb2c8b62d5baf700898bd40a59c7b9fdb855630b3385ba7ee4cae6ff082fa17d"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.10.0/htr_Linux_x86_64.tar.gz"
+      sha256 "0149d733633ded7e37608f9b613c9eddc7396b5d3013097810c5230f79c86e6e"
       def install
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.9.1/htr_Linux_arm64.tar.gz"
-      sha256 "16713afd64deed775ed6d6f2758fa05b028bbde8a85613cb50d35fa9323eb38c"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.10.0/htr_Linux_arm64.tar.gz"
+      sha256 "ce5777dfb87bf131acf1a40c721181ab240028771595825e795347e3aa81c1c3"
       def install
         bin.install "htr"
       end
