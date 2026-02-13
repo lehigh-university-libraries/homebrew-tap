@@ -5,20 +5,20 @@
 class Crosswalk < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/crosswalk"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.0.1/crosswalk_Darwin_x86_64.tar.gz"
-      sha256 "676550c7e4455f9cd363d6d7222026e2d6c933c8c88a5cc15564aa94621246c2"
+      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.1.0/crosswalk_Darwin_x86_64.tar.gz"
+      sha256 "afa97684ba33cc94eab4abbe6f5abe03421472397cc04a3f202837a0054885e9"
 
       def install
         bin.install "crosswalk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.0.1/crosswalk_Darwin_arm64.tar.gz"
-      sha256 "07f3feec3e9e212b9314a4f324b199bc06213cf5d235f3002125433b40b20631"
+      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.1.0/crosswalk_Darwin_arm64.tar.gz"
+      sha256 "41de212a0c11efc8a4dca3faaa82465328f4199e921733883cd658721c93e6e7"
 
       def install
         bin.install "crosswalk"
@@ -28,15 +28,15 @@ class Crosswalk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.0.1/crosswalk_Linux_x86_64.tar.gz"
-      sha256 "df1560863952048f899ef2c2978a6027ac84732e5b164ff14290130d8d1f531c"
+      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.1.0/crosswalk_Linux_x86_64.tar.gz"
+      sha256 "b20c786e06942a1942092256c4e4d56b25696c22edeab889ab7010b2d5b1daaf"
       def install
         bin.install "crosswalk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.0.1/crosswalk_Linux_arm64.tar.gz"
-      sha256 "200b2ac318ab0b1e9fefb533a7d738a13ce16283209d24d8fc255f70ce5c77ee"
+      url "https://github.com/lehigh-university-libraries/crosswalk/releases/download/v0.1.0/crosswalk_Linux_arm64.tar.gz"
+      sha256 "90d90f85b6e666608ac7da2c92b5634fe376150936832685bbc5139badf48592"
       def install
         bin.install "crosswalk"
       end
