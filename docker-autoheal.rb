@@ -5,22 +5,22 @@
 class DockerAutoheal < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/docker-autoheal"
-  version "0.2.9"
+  version "0.2.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.9/docker-autoheal_Darwin_x86_64.tar.gz"
-      sha256 "d05aa98d3ce1a6ae4052d3398b55a1010c2a96297c48d44ce74b2b62f52d1104"
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.10/docker-autoheal_Darwin_x86_64.tar.gz"
+      sha256 "37653b5949fd6d137398bbe8845140f8bec83c26f51f53848244f6f2829f3b00"
 
-      def install
+      define_method(:install) do
         bin.install "docker-autoheal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.9/docker-autoheal_Darwin_arm64.tar.gz"
-      sha256 "7734fc1ffb2ee08d6dc55449ddf6fef47871715a697a51048a7f53901387481f"
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.10/docker-autoheal_Darwin_arm64.tar.gz"
+      sha256 "57e23088a593fca8f5c98b08480fc88b2e605d7393adde1f640ff7c044ea5824"
 
-      def install
+      define_method(:install) do
         bin.install "docker-autoheal"
       end
     end
@@ -28,16 +28,16 @@ class DockerAutoheal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.9/docker-autoheal_Linux_x86_64.tar.gz"
-      sha256 "fe1aae87e53dabab3dfcc6173dd6f1071d2c0f202e9a31d269c6a9512dbc4f5e"
-      def install
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.10/docker-autoheal_Linux_x86_64.tar.gz"
+      sha256 "37c7fc1bea755aa4f762d0ef5e59ab4cb7a1afbaf953e1884d331dfb3bbee936"
+      define_method(:install) do
         bin.install "docker-autoheal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.9/docker-autoheal_Linux_arm64.tar.gz"
-      sha256 "b5ffd3fb12fb6478fd119a4b1c7f237960ea8b252d197a074804790e55bbd58c"
-      def install
+      url "https://github.com/lehigh-university-libraries/docker-autoheal/releases/download/0.2.10/docker-autoheal_Linux_arm64.tar.gz"
+      sha256 "d7d04db0dd4885abccb1ced753e1e73c0a517211cf099ab7e85950628d3f6197"
+      define_method(:install) do
         bin.install "docker-autoheal"
       end
     end
