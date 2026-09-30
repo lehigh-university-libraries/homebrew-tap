@@ -5,20 +5,20 @@
 class Hawkeye < Formula
   desc "Flag PDF and image pages for sensitive-information review"
   homepage "https://github.com/lehigh-university-libraries/hawkeye"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.1/hawkeye_Darwin_x86_64.tar.gz"
-      sha256 "fa07917a2d47e615aaca5842768cf13c54243026a8cd44d12828440776bbf836"
+      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.2/hawkeye_Darwin_x86_64.tar.gz"
+      sha256 "89eb9d75757d7583b7580adc513ae8110f248306f4cbb76f5ff4f20bf172f5be"
 
       define_method(:install) do
         bin.install "hawkeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.1/hawkeye_Darwin_arm64.tar.gz"
-      sha256 "e4a14daa2be3fe34dfeb2e9f569601fcb39f49be804ef498d82a90c6649f62a1"
+      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.2/hawkeye_Darwin_arm64.tar.gz"
+      sha256 "578760e22679e4960bdfa875450c1dc54b88b22560c7485f93898b202e777da8"
 
       define_method(:install) do
         bin.install "hawkeye"
@@ -28,15 +28,15 @@ class Hawkeye < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.1/hawkeye_Linux_x86_64.tar.gz"
-      sha256 "1b0ec833d4c1c748faa744ed6e37e4a29ea32a11f3913c339a1e3d9272c84645"
+      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.2/hawkeye_Linux_x86_64.tar.gz"
+      sha256 "298abb5064bf4bc57482928c84026778370e05f6232bb6833732a4356f257d91"
       define_method(:install) do
         bin.install "hawkeye"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.1/hawkeye_Linux_arm64.tar.gz"
-      sha256 "be8e59767db308dc4a24b6741c4c9f4f29c5d3839dc5758bab37e90bfd534265"
+      url "https://github.com/lehigh-university-libraries/hawkeye/releases/download/v0.0.2/hawkeye_Linux_arm64.tar.gz"
+      sha256 "6f0221522c1b46e98abb5e39c827b437da05cc93fc9ab957586a08c7e5ff7364"
       define_method(:install) do
         bin.install "hawkeye"
       end
