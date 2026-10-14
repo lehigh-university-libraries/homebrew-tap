@@ -5,20 +5,20 @@
 class Htr < Formula
   desc ""
   homepage "https://github.com/lehigh-university-libraries/htr"
-  version "0.22.0"
+  version "0.23.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.22.0/htr_Darwin_x86_64.tar.gz"
-      sha256 "62d85dd8294e7be607f2c789adf9fe551f13aef33e1dd2eb1a0625c0dc593324"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.23.0/htr_Darwin_x86_64.tar.gz"
+      sha256 "9c182f2ffea475509120f7e5412dfb48dddd4f37efa524d320352209ed3a5a13"
 
       define_method(:install) do
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.22.0/htr_Darwin_arm64.tar.gz"
-      sha256 "5c1d6ad77352ffebc7da6e78a1c9cde34ca17357a4f51b3d70d02ab9891521b3"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.23.0/htr_Darwin_arm64.tar.gz"
+      sha256 "c42ed5198a8dd4477c5af1d1f7054fb59c4b6b1992af3a6d6dd393ac1d455b95"
 
       define_method(:install) do
         bin.install "htr"
@@ -28,15 +28,15 @@ class Htr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.22.0/htr_Linux_x86_64.tar.gz"
-      sha256 "11c0d3b295129d85fe2efa05f7b8bc66765d7d6e83de44a1b083c22e3e267450"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.23.0/htr_Linux_x86_64.tar.gz"
+      sha256 "ad7ce314ee9adbeb1437b52c47a237cd14d91abc5d8d15dd1620bf8d02031017"
       define_method(:install) do
         bin.install "htr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.22.0/htr_Linux_arm64.tar.gz"
-      sha256 "d3a8b7e15659f68ede27974e59cb6c1334f4fac1f41ac3764e58dc34167dcfee"
+      url "https://github.com/lehigh-university-libraries/htr/releases/download/v0.23.0/htr_Linux_arm64.tar.gz"
+      sha256 "391730acf8f02d3e57f02a6453e7a3da02887e6ec1d7c4ffe3da6d02a5214f76"
       define_method(:install) do
         bin.install "htr"
       end
